@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1><i class="fa-solid fa-list-check"></i> To-Do App</h1>
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-section">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task...">
+
+        <select id="priority">
+            <option value="High">🔴 High</option>
+            <option value="Medium" selected>🟡 Medium</option>
+            <option value="Low">🟢 Low</option>
+        </select>
+
+        <input type="date" id="dueDate">
+
+        <button id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+            Add
+        </button>
+
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search tasks...">
+
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="active">
+            Active
+        </button>
+
+        <button class="filter-btn" data-filter="completed">
+            Completed
+        </button>
+
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats">
+
+        <div class="card">
+            <h3>Total</h3>
+            <span id="totalTasks">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <span id="completedTasks">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <span id="pendingTasks">0</span>
+        </div>
+
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Empty State -->
+    <div id="emptyState">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <h2>No Tasks Yet</h2>
+        <p>Add your first task to get started.</p>
+    </div>
+
+    <!-- Footer Buttons -->
+    <div class="footer">
+
+        <button id="clearCompleted">
+            <i class="fa-solid fa-check"></i>
+            Clear Completed
+        </button>
+
+        <button id="deleteAll">
+            <i class="fa-solid fa-trash"></i>
+            Delete All
+        </button>
+
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
