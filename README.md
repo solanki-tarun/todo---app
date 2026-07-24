@@ -3,7 +3,7 @@
 A modern and responsive To-Do App built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
- https://solanki-tarun.github.io/todo---app/
+ https://solanki-tarun.github.io/todo-app/
 
  ---
 
